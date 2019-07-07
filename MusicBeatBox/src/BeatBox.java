@@ -25,7 +25,7 @@ public class BeatBox {
 	} 
 	
 	public void buildGUI() {
-		theFrame = new JFrame("Cyver BeatBox");
+		theFrame = new JFrame("Cyber BeatBox");
 		theFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		BorderLayout layout = new BorderLayout();
 		JPanel background = new JPanel(layout);
@@ -53,6 +53,7 @@ public class BeatBox {
 		Box nameBox = new Box(BoxLayout.Y_AXIS);
 		for(int i = 0; i < 16; i++) {
 			nameBox.add(new Label(instrumentNames[i]));
+		}	
 			
 		background.add(BorderLayout.EAST, buttonBox);
 		background.add(BorderLayout.WEST, nameBox);
@@ -80,9 +81,6 @@ public class BeatBox {
 			
 		}
 		
-		
-		
-	}
 
 	public void setUpMidi() {
 	try {
